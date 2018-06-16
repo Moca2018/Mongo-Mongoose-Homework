@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Scraping Page</title>
+    
+<!-- //=========================================================================== -->
+<!-- // ADDING SOME STYLE TO THE PAGE -->
+
+    <style>
+
+      body { background-color: #707070 }
+
+
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+        background-color: #C5BEAA;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        background-image: url("https://cdn.cnn.com/cnnnext/dam/assets/141007121130-the-lead-background---light-full-169.jpg");
+      }
+   
+
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+      }
+
+      #notes {
+        float: right;
+        width: 30%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+ 
+      }
+
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: #988B74;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+      }
+
+      input {
+        height: 36px;
+        font-size: 24px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px;
+      }
+
+      textarea {
+        height: 200px;
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+      }
+
+    .jumbotron {
+      background-color: #FFFFFF;
+      color: #BD002B;
+      }
+ 
+    </style>
+  </head>
+ 
+<!-- //===========================================================================
+// NOW HERE IS THE BODY OF THE APP - STARTING WITH A JUBOTRON, THEN TWO COLUMS OF INFO./ ONE WITH THE ARTICLES AND THEN THE OTHER FOR THE NOTES -->
+
+  <body>
+      
+
+    <div class="jumbotron jumbotron-fluid">
+   
+     <div class="container">
+        <center>
+        <h1>SCRAPPER - CNN NEWS FEEDS</h1> 
+        <p>The Most Trusted Name in News</p>
+        <img src="http://hdwallpapersbuzz.com/wp-content/uploads/2017/04/cnn-logo-4.png" class="img-thumbnail" alt="Cinque Terre">
+        </center>
+      </div>
+    </div>
+
+<!-- //=========================================================================== -->
+
+    <div id="wrapper">
+      <div id="articles"></div>
+
+      <div id="notes"></div>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
